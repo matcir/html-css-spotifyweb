@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --spotify-wrp-bg: #141922;
+  --spotify-upgrade-top: #080b12;
+  --spotify-playbar-bg: #282828;
+  --spotify-leftmenu-bg: black;
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: var(--spotify-wrp-bg);
+}
+
+.debug {
+  border: 1px solid black;
+}
+
+.top,
+.playbar {
+  width: 100%;
+}
+
+.playbar {
+  height: 70px;
+  background-color: var(--spotify-playbar-bg);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.top {
+  height: calc(100% - 70px);
+}
+
+.left_menu {
+  width: 230px;
+  height: 100%;
+  background-color: var(--spotify-leftmenu-bg);
+}
+
+.right_menu {
+  width: calc(100% - 230px);
+  height: 100%;
+}
+
+.upgrade {
+  height: 70px;
+  width: 100%;
+  background-color: var(--spotify-upgrade-top);
+}
+
+.main {
+  height: calc(100% - 70px);
+  width: 100%;
+}
