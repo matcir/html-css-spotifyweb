@@ -62,7 +62,7 @@ ul {
 }
 
 .upgrade {
-  height: 70px;
+  height: 90px;
   width: 100%;
   background-color: var(--spotify-upgrade-top);
 }
@@ -126,6 +126,10 @@ ul {
   }
 }
 
+.relative {
+  position: relative;
+}
+
 #download {
   width: 20px;
   margin: 0 8px 0 -5px;
@@ -151,6 +155,19 @@ hr {
 .user {
   display: flex;
   align-items: center;
+}
+
+button {
+  border-radius: 50px;
+  background-color: var(--spotify-upgrade-top);
+  border: 1px solid white;
+  color: white;
+  padding: 0 2rem;
+  height: 50%;
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  bottom: 30px;
 }
 
 @media screen and (max-width: 878px) {
