@@ -27,10 +27,6 @@ ul {
   background-color: var(--spotify-wrp-bg);
 }
 
-.debug {
-  border: 1px solid black;
-}
-
 .top,
 .playbar {
   width: 100%;
@@ -168,6 +164,20 @@ button {
   right: 5px;
   top: 20px;
   bottom: 30px;
+}
+
+.menu ul li {
+  color: var(--spotify-grey);
+  padding: 1rem 1rem 0.2rem 1rem;
+}
+
+#selected_B {
+  border-bottom: 1px solid #a3f02e;
+}
+
+.menu {
+  width: 70%;
+  margin: auto;
 }
 
 @media screen and (max-width: 878px) {
