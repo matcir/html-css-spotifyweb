@@ -58,7 +58,7 @@ ul {
 }
 
 .upgrade {
-  height: 90px;
+  height: 70px;
   width: 100%;
   background-color: var(--spotify-upgrade-top);
 }
@@ -70,6 +70,7 @@ ul {
 
 .container_left {
   width: 85%;
+  height: 100%;
   margin: auto;
   padding: 1rem 0;
 }
@@ -148,6 +149,14 @@ hr {
   margin-right: 10px;
 }
 
+.top_left {
+  height: calc(100% - 100px);
+}
+
+.account {
+  height: 70px;
+}
+
 .user {
   display: flex;
   align-items: center;
@@ -168,25 +177,36 @@ button {
 
 .menu ul li {
   color: var(--spotify-grey);
-  padding: 1rem 1rem 0.2rem 1rem;
+  padding: 1rem 0 0.2rem 0;
+  margin: 0 10px;
 }
 
-#selected_B {
-  border-bottom: 1px solid #a3f02e;
+.menu .categories {
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.menu {
-  width: 70%;
+/* .music {
+  width: 95%;
   margin: auto;
+} */
+
+@media screen and (max-width: 992px) {
+  .menu {
+    width: 90%;
+    margin: auto;
+  }
+
+  .categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width: 878px) {
+@media screen and (max-width: 768px) {
 }
 
-@media screen and (max-width: 639px) {
-}
-
-@media screen and (max-width: 552px) {
+@media screen and (max-width: 576px) {
   .left_menu {
     width: 50px;
   }
