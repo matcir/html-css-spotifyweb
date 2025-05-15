@@ -9,11 +9,17 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 :root {
   --spotify-wrp-bg: #141922;
   --spotify-upgrade-top: #080b12;
   --spotify-playbar-bg: #282828;
   --spotify-leftmenu-bg: black;
+  --spotify-white: white;
+  --spotify-grey: #a3a3a3;
 }
 
 .wrapper {
@@ -47,6 +53,7 @@ img {
   width: 230px;
   height: 100%;
   background-color: var(--spotify-leftmenu-bg);
+  color: var(--spotify-grey);
 }
 
 .right_menu {
@@ -66,11 +73,132 @@ img {
 }
 
 .container_left {
-  width: 90%;
+  width: 85%;
   margin: auto;
   padding: 1rem 0;
 }
 
 #logo_big {
   width: 70%;
+}
+
+#logo_small {
+  display: none;
+}
+
+.nav {
+  padding: 0.7rem 0;
+}
+
+.nav li {
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav li img {
+  width: 1.5rem;
+  color: var(--spotify-grey);
+  margin-right: 5px;
+}
+
+.selected_L {
+  color: var(--spotify-white);
+}
+
+.selected_L img {
+  fill: #d2d2d2;
+}
+
+.container_left h4 {
+  color: var(--spotify-white);
+  padding: 1rem 0 0.5rem 0;
+}
+
+.new_playlist {
+  line-height: 2rem;
+}
+
+.playlist {
+  padding-top: 0.5rem;
+  li {
+    padding: 0.5rem 0;
+  }
+}
+
+#download {
+  width: 20px;
+  margin: 0 8px 0 -5px;
+}
+
+.download {
+  align-items: center;
+}
+
+hr {
+  border: 1px solid var(--spotify-grey);
+  margin: 0.5rem 0;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--spotify-grey);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 878px) {
+}
+
+@media screen and (max-width: 639px) {
+}
+
+@media screen and (max-width: 552px) {
+  .left_menu {
+    width: 50px;
+  }
+
+  .right_menu {
+    width: calc(100% - 50px);
+    height: 100%;
+  }
+
+  .container_left {
+    width: 50%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  #logo_big {
+    display: none;
+  }
+
+  #logo_small {
+    display: block;
+    width: 1.5rem;
+    margin: auto;
+  }
+
+  .container_left span,
+  .container_left h4,
+  .playlist li,
+  .new_playlist i,
+  hr {
+    display: none;
+  }
+
+  .nav li img {
+    margin: auto;
+  }
+
+  #download,
+  .user img {
+    margin: 0.5rem auto;
+  }
 }
