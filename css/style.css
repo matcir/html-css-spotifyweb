@@ -64,3 +64,13 @@ img {
   height: calc(100% - 70px);
   width: 100%;
 }
+
+.container_left {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+#logo_big {
+  width: 70%;
+}
