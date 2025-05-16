@@ -282,6 +282,11 @@ button {
   border-radius: 50%;
 }
 
+.artists span,
+.suggested span {
+  color: var(--spotify-grey);
+}
+
 @media screen and (max-width: 992px) {
   .menu {
     width: 90%;
@@ -356,6 +361,71 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+  .music {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .col-1-s {
+    width: calc(100% / 12 * 1);
+    padding: 1rem 0.5rem;
+    flex-grow: 1;
+  }
+
+  .col-2-s {
+    width: calc(100% / 12 * 2);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-3-s {
+    width: calc(100% / 12 * 3);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-4-s {
+    width: calc(100% / 12 * 4);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-5-s {
+    width: calc(100% / 12 * 5);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-6-s {
+    width: calc(100% / 12 * 6);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-7-s {
+    width: calc(100% / 12 * 7);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-8-s {
+    width: calc(100% / 12 * 8);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-9-s {
+    width: calc(100% / 12 * 9);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-10-s {
+    width: calc(100% / 12 * 10);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-11-s {
+    width: calc(100% / 12 * 11);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-12-s {
+    width: calc(100% / 12 * 12);
+    padding: 1rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
