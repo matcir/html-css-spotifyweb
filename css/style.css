@@ -22,6 +22,72 @@ ul {
   --spotify-grey: #a3a3a3;
 }
 
+.col-1 {
+  width: calc(100% / 12 * 1);
+  padding: 1rem 0.5rem;
+  flex-grow: 1;
+}
+
+.col-2 {
+  width: calc(100% / 12 * 2);
+  padding: 1rem 0.5rem;
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+  padding: 1rem 0.5rem;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+  padding: 1rem 0.5rem;
+}
+
+.col-5 {
+  width: calc(100% / 12 * 5);
+  padding: 1rem 0.5rem;
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+  padding: 1rem 0.5rem;
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7);
+  padding: 1rem 0.5rem;
+}
+
+.col-8 {
+  width: calc(100% / 12 * 8);
+  padding: 1rem 0.5rem;
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9);
+  padding: 1rem 0.5rem;
+}
+
+.col-10 {
+  width: calc(100% / 12 * 10);
+  padding: 1rem 0.5rem;
+}
+
+.col-11 {
+  width: calc(100% / 12 * 11);
+  padding: 1rem 0.5rem;
+}
+
+.col-12 {
+  width: calc(100% / 12 * 12);
+  padding: 1rem 0.5rem;
+}
+
+.row {
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
 .wrapper {
   height: 100vh;
   background-color: var(--spotify-wrp-bg);
@@ -175,6 +241,10 @@ button {
   bottom: 30px;
 }
 
+.main {
+  overflow-y: auto;
+}
+
 .menu ul li {
   color: var(--spotify-grey);
   padding: 1rem 0 0.2rem 0;
@@ -184,12 +254,29 @@ button {
 .menu .categories {
   justify-content: center;
   flex-wrap: wrap;
+  font-size: small;
 }
 
-/* .music {
+.music {
   width: 95%;
   margin: auto;
-} */
+  color: white;
+  margin-top: 2rem;
+}
+
+.info {
+  text-align: center;
+  padding: 0.5rem 0;
+  .singer {
+    font-size: smaller;
+    color: var(--spotify-grey);
+    padding: 0.2rem;
+  }
+}
+
+.music h2 {
+  font-size: 28px;
+}
 
 @media screen and (max-width: 992px) {
   .menu {
