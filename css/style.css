@@ -99,7 +99,7 @@ ul {
 }
 
 .playbar {
-  height: 70px;
+  height: 80px;
   background-color: var(--spotify-playbar-bg);
 }
 
@@ -108,7 +108,7 @@ ul {
 }
 
 .top {
-  height: calc(100% - 70px);
+  height: calc(100% - 80px);
 }
 
 .left_menu {
@@ -285,6 +285,106 @@ button {
 .artists span,
 .suggested span {
   color: var(--spotify-grey);
+}
+
+.left {
+  align-items: center;
+  padding: 1rem;
+}
+
+.album img {
+  width: 50px;
+}
+
+.nome {
+  padding: 0.5rem;
+}
+
+.nome h4 {
+  color: var(--spotify-white);
+}
+
+.nome span {
+  color: var(--spotify-grey);
+}
+
+.save i {
+  padding: 0 0.2rem;
+}
+
+.center {
+  width: 40%;
+}
+
+.control {
+  justify-content: center;
+  align-items: center;
+}
+
+.control i {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+#play {
+  font-size: 2rem;
+}
+
+.bar {
+  height: 2px;
+  border: 3px solid #8c8c8c;
+  border-radius: 10px;
+}
+
+#song {
+  width: 100%;
+}
+
+#volume {
+  width: 100%;
+}
+
+.time {
+  color: var(--spotify-white);
+  align-items: center;
+  font-size: smaller;
+  span {
+    font-size: smaller;
+    padding: 0 1rem;
+  }
+}
+
+.listen i {
+  padding: 0.5rem;
+}
+
+.right {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.playbar {
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.seconds {
+  height: 2px;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.value {
+  height: 2px;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 15%;
 }
 
 @media screen and (max-width: 992px) {
