@@ -278,6 +278,10 @@ button {
   font-size: 28px;
 }
 
+.artists .card img {
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 992px) {
   .menu {
     width: 90%;
@@ -287,6 +291,67 @@ button {
   .categories {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .col-1-md {
+    width: calc(100% / 12 * 1);
+    padding: 1rem 0.5rem;
+    flex-grow: 1;
+  }
+
+  .col-2-md {
+    width: calc(100% / 12 * 2);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-3-md {
+    width: calc(100% / 12 * 3);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-4-md {
+    width: calc(100% / 12 * 4);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-5-md {
+    width: calc(100% / 12 * 5);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-6-md {
+    width: calc(100% / 12 * 6);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-7-md {
+    width: calc(100% / 12 * 7);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-8-md {
+    width: calc(100% / 12 * 8);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-9-md {
+    width: calc(100% / 12 * 9);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-10-md {
+    width: calc(100% / 12 * 10);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-11-md {
+    width: calc(100% / 12 * 11);
+    padding: 1rem 0.5rem;
+  }
+
+  .col-12-md {
+    width: calc(100% / 12 * 12);
+    padding: 1rem 0.5rem;
   }
 }
 
