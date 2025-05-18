@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div class="top d-flex">
@@ -17,24 +19,24 @@
                         <img id="logo_small" src="./img/logo-small.svg" alt="logosmall.svg">
                         <ul class="nav">
                             <li class="selected_L">
-                                <img src="./img/home.svg" alt="home.svg"> 
-                                    <span>Home</span>
+                                <img src="./img/home.svg" alt="home.svg">
+                                <span>Home</span>
                             </li>
-                            
+
                             <li>
-                                <img src="./img/search.svg" alt="home.svg"> 
-                                    <span>Search</span>
+                                <img src="./img/search.svg" alt="home.svg">
+                                <span>Search</span>
                             </li>
-                            
+
                             <li>
-                                <img src="./img/libreria.svg" alt="home.svg"> 
-                                    <span>La tua libreria</span>
+                                <img src="./img/libreria.svg" alt="home.svg">
+                                <span>La tua libreria</span>
                             </li>
                         </ul>
                         <h4>PLAYLIST</h4>
                         <div class=" new_playlist">
-                            <i class="fa-solid fa-square-plus fa-2xl" style="color: #a3a3a3"></i>
-                                <span>&nbsp; Crea Playlist</span>
+                            <i class="fa-solid fa-square-plus fa-2xl"></i>
+                            <span>&nbsp; Crea Playlist</span>
                         </div>
                         <ul class="playlist">
                             <li>Nome Playlist</li>
@@ -44,7 +46,7 @@
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
                             <li>Nome Playlist</li>
-                        </ul>   
+                        </ul>
                     </div>
                     <div class="account">
                         <div class="d-flex download">
@@ -81,6 +83,8 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/metal_lifting.jpg" alt="playlist.jpg">
                                         </div>
                                         <div class="info">
@@ -92,6 +96,8 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/stranger.jpeg" alt="playlist.jpg">
                                         </div>
                                         <div class="info">
@@ -103,6 +109,8 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/aquietplace.jpeg" alt="playlist.jpg">
                                         </div>
                                         <div class="info">
@@ -114,7 +122,10 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/split.jpeg" alt="playlist.jpg">
+                                            
                                         </div>
                                         <div class="info">
                                             <h3>Split</h3>
@@ -125,18 +136,24 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/cure.jpeg" alt="playlist.jpg">
                                         </div>
                                         <div class="info">
                                             <h3>A cure for wellness</h3>
                                             <span class="singer">Subtitle</span>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/sinister.jpeg" alt="playlist.jpg">
+                                            
                                         </div>
                                         <div class="info">
                                             <h3>Sinister</h3>
@@ -153,17 +170,24 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/radar.jpeg" alt="playlist.jpg">
+                                            
                                         </div>
                                         <div class="info">
-                                            <h3>Release Radar   </h3>
+                                            <h3>Release Radar </h3>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/mixdaily.jpeg" alt="playlist.jpg">
+                                            
                                         </div>
                                         <div class="info">
                                             <h3>Daily Mix 1</h3>
@@ -179,7 +203,10 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/youg.jpeg">
+                                            
                                         </div>
                                         <div class="info">
                                             <h3>Lana Del Rey</h3>
@@ -189,7 +216,10 @@
                                 <div class="col-2 col-3-md col-6-s">
                                     <div class="card">
                                         <div class="playlist">
+                                            <div class="overlay"></div>
+                                            <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                                             <img src="/img/einaudi.jpeg" alt="playlist.jpg">
+                                            
                                         </div>
                                         <div class="info">
                                             <h3>Ludovico Einaudi</h3>
@@ -212,8 +242,8 @@
                     </div>
                 </div>
                 <div class="save d-flex">
-                    <i class="fa-regular fa-heart" style="color: #a3a3a3;"></i>
-                    <i class="fa-regular fa-folder" style="color: #a3a3a3;"></i>
+                    <i class="fa-regular fa-heart" ></i>
+                    <i class="fa-regular fa-folder" ></i>
                 </div>
             </div>
             <div class="center">
@@ -222,7 +252,7 @@
                     <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
                     <i id="play" class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
                     <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>    
+                    <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
                 </div>
                 <div class="time d-flex">
                     <span>0:25</span>
@@ -245,4 +275,5 @@
         </div>
     </div>
 </body>
+
 </html>

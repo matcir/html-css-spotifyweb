@@ -236,7 +236,7 @@ button {
   padding: 0 2rem;
   height: 50%;
   position: absolute;
-  right: 5px;
+  right: 20px;
   top: 20px;
   bottom: 30px;
 }
@@ -272,6 +272,66 @@ button {
     color: var(--spotify-grey);
     padding: 0.2rem;
   }
+}
+
+.playlist {
+  position: relative;
+}
+
+.playlist #play {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  cursor: pointer;
+  .playlist #play {
+    display: block;
+  }
+  .overlay {
+    opacity: 40%;
+  }
+}
+
+.categories li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.upgrade button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.left_menu li:hover,
+.left_menu .new_playlist:hover,
+.new_playlist i:hover,
+.download:hover,
+.playbar .nome span:hover,
+.playbar .save i:hover,
+.playbar .control i:hover,
+.playbar .listen i {
+  color: white;
+  cursor: pointer;
+}
+
+.playbar .control #play:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .music h2 {
@@ -310,6 +370,7 @@ button {
 
 .save i {
   padding: 0 0.2rem;
+  color: var(--spotify-grey);
 }
 
 .center {
@@ -366,11 +427,7 @@ button {
 
 .playbar {
   justify-content: space-between;
-}
-
-.left,
-.right {
-  width: 25%;
+  position: relative;
 }
 
 .seconds {
@@ -385,6 +442,11 @@ button {
   border: 3px solid white;
   border-radius: 10px;
   width: 15%;
+}
+
+.left,
+.right {
+  width: 20%;
 }
 
 @media screen and (max-width: 992px) {
@@ -525,6 +587,10 @@ button {
   .col-12-s {
     width: calc(100% / 12 * 12);
     padding: 1rem 0.5rem;
+  }
+
+  .save {
+    display: block;
   }
 }
 
