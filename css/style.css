@@ -117,6 +117,10 @@ ul {
   background-color: var(--spotify-leftmenu-bg);
   color: var(--spotify-grey);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .right_menu {
@@ -133,13 +137,6 @@ ul {
 .main {
   height: calc(100% - 70px);
   width: 100%;
-}
-
-.container_left {
-  width: 85%;
-  height: 100%;
-  margin: auto;
-  padding: 1rem 0;
 }
 
 #logo_big {
@@ -174,13 +171,13 @@ ul {
   fill: #d2d2d2;
 }
 
-.container_left h4 {
+.top_left h4 {
   color: var(--spotify-white);
   padding: 1rem 0 0.5rem 0;
 }
 
 .new_playlist {
-  line-height: 2rem;
+  padding: 1rem 0;
 }
 
 .playlist {
@@ -216,12 +213,8 @@ hr {
   margin-right: 10px;
 }
 
-.top_left {
-  height: calc(100% - 100px);
-}
-
 .account {
-  height: 70px;
+  background-color: black;
 }
 
 .user {
@@ -400,8 +393,9 @@ button {
 }
 
 .bar {
-  border: 3px solid #8c8c8c;
+  background-color: var(--spotify-grey);
   border-radius: 10px;
+  height: 4px;
 }
 
 #song {
@@ -416,6 +410,7 @@ button {
 .time {
   color: var(--spotify-white);
   font-size: smaller;
+  align-items: center;
   span {
     font-size: smaller;
     padding: 0 1rem;
@@ -615,12 +610,6 @@ button {
     height: 100%;
   }
 
-  .container_left {
-    width: 50%;
-    margin: auto;
-    padding: 1rem 0;
-  }
-
   #logo_big {
     display: none;
   }
@@ -631,8 +620,8 @@ button {
     margin: auto;
   }
 
-  .container_left span,
-  .container_left h4,
+  .top_left span,
+  .top_left h4,
   .playlist li,
   .new_playlist i,
   hr {
