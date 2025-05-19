@@ -186,7 +186,7 @@ ul {
   padding: 1rem 0;
 }
 
-.playlist {
+.top_left .playlist {
   padding-top: 0.5rem;
   li {
     padding: 0.5rem 0;
@@ -281,11 +281,18 @@ button {
   }
 }
 
-.playlist {
+.right_menu .playlist {
   position: relative;
 }
 
-.playlist #play {
+.playlist-circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.playlist #play,
+.playlist-circle #play {
   font-size: 4rem;
   position: absolute;
   top: 50%;
@@ -306,7 +313,8 @@ button {
 
 .card:hover {
   cursor: pointer;
-  .playlist #play {
+  .playlist #play,
+  .playlist-circle #play {
     display: block;
   }
   .overlay {
