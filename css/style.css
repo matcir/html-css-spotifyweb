@@ -116,6 +116,7 @@ ul {
   height: 100%;
   background-color: var(--spotify-leftmenu-bg);
   color: var(--spotify-grey);
+  overflow: hidden;
 }
 
 .right_menu {
@@ -257,6 +258,13 @@ button {
   font-size: small;
 }
 
+.green_underline {
+  height: 3px;
+  width: 50%;
+  margin: auto;
+  background-color: greenyellow;
+}
+
 .music {
   width: 95%;
   margin: auto;
@@ -392,13 +400,13 @@ button {
 }
 
 .bar {
-  height: 2px;
   border: 3px solid #8c8c8c;
   border-radius: 10px;
 }
 
 #song {
   width: 100%;
+  position: relative;
 }
 
 #volume {
@@ -407,7 +415,6 @@ button {
 
 .time {
   color: var(--spotify-white);
-  align-items: center;
   font-size: smaller;
   span {
     font-size: smaller;
@@ -428,6 +435,7 @@ button {
 .playbar {
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
 
 .seconds {
@@ -435,6 +443,9 @@ button {
   border: 3px solid white;
   border-radius: 10px;
   width: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .value {
