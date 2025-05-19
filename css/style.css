@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: bolder;
 }
 
 img {
@@ -121,6 +122,10 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+}
+
+.selected_L {
+  border-left: 3px solid greenyellow;
 }
 
 .right_menu {
@@ -324,6 +329,7 @@ button {
 .new_playlist i:hover,
 .download:hover,
 .playbar .nome span:hover,
+.playbar .nome h4:hover,
 .playbar .save i:hover,
 .playbar .control i:hover,
 .playbar .listen i {
@@ -450,6 +456,19 @@ button {
   border: 3px solid white;
   border-radius: 10px;
   width: 15%;
+}
+
+.seconds:hover,
+.value:hover {
+  border-color: greenyellow;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
 }
 
 .left,
