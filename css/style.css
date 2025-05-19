@@ -350,6 +350,10 @@ button {
   cursor: pointer;
 }
 
+.playbar .album span:hover {
+  text-decoration: underline;
+}
+
 .music h2 {
   font-size: 28px;
 }
@@ -636,7 +640,7 @@ button {
     padding: 0.2rem 0;
   }
 
-  .album img {
+  .nome {
     display: none;
   }
 
@@ -698,5 +702,13 @@ button {
 
   .center {
     width: calc(100% - 350px);
+  }
+
+  .right {
+    justify-content: flex-end;
+  }
+
+  .time {
+    display: none;
   }
 }
