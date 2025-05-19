@@ -409,7 +409,6 @@ button {
 
 #song {
   width: 70%;
-  position: relative;
 }
 
 #volume {
@@ -446,9 +445,7 @@ button {
   border: 3px solid white;
   border-radius: 10px;
   width: 30%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 .value {
@@ -456,18 +453,25 @@ button {
   border: 3px solid white;
   border-radius: 10px;
   width: 15%;
+  position: relative;
 }
 
 .seconds:hover,
 .value:hover {
   border-color: greenyellow;
+  .circle-volume {
+    display: block;
+  }
 }
 
-.circle {
+.circle-volume {
   height: 12px;
   width: 12px;
   background-color: white;
   border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  right: -6px;
   display: none;
 }
 
